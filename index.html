@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>图片轮播</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+    <div id="gallery">
+        <div id="imagearea">
+            <div id="image">
+                <a href="javascript:slideShow.nav(-1)" class="imgnav " id="previmg"></a>
+                <a href="javascript:slideShow.nav(1)" class="imgnav " id="nextimg"></a>
+            </div>
+        </div>
+        <div id="cutline"></div>
+        <div id="thumbarea">
+            <a href="javascript:slideShow.thumbNav(-1)" class="thumbnav" id="prethumb"></a>
+            <div id="thumb">
+                <ul id="thumbs">
+                    <li value="1" isMovie="false" ><img src="assets/images/thumbs/1.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="2" isMovie="false" ><img src="assets/images/thumbs/2.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="3" isMovie="false" ><img src="assets/images/thumbs/3.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="4" isMovie="false" ><img src="assets/images/thumbs/4.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="5" isMovie="true" ><img src="assets/images/thumbs/5.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="6" isMovie="false" ><img src="assets/images/thumbs/1.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="7" isMovie="false" ><img src="assets/images/thumbs/2.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="8" isMovie="false" ><img src="assets/images/thumbs/3.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                    <li value="9" isMovie="false" ><img src="assets/images/thumbs/4.jpg" width="127" height="80" alt="欢迎使用"/></li>
+                </ul>
+            </div>
+            <a href="javascript:slideShow.thumbNav(1)" class="thumbnav" id="nextthumb"></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/slide.js"></script>
+</body>
+</html>
