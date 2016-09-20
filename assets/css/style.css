@@ -39,7 +39,19 @@ body {
     padding: 5px;
     width: 800px;
     margin-left: 140px;
-    background: #FFF url(../images/images/loading.gif) center center no-repeat
+    background: #FFF url(../images/images/loading.gif) center center no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mediaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    height: 400px;
 }
 
 #image img {
@@ -76,9 +88,9 @@ body {
 #thumbs {
     /*position: absolute;*/
     /*list-style: none;*/
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     height: 100px;
-    border-right: 5px solid #FFF;
+    /*border-right: 5px solid #FFF;*/
     display: flex;
     flex-direction: row;
 }
@@ -97,15 +109,15 @@ body {
 
 .imgnav {
     position: absolute;
-    height: 375px;
-    width: 20%;
+    height: 75px;
+    width: 42px;
     z-index: 100;
     outline: none;
     cursor: pointer
 }
 
 #previmg {
-    background: url(../images/images/left.png) left center no-repeat;
+    background: url(../images/images/imageNav.png) left center no-repeat;
     border-left: 5px solid #FFF;
     left: -70px
 }
@@ -117,9 +129,10 @@ body {
 }
 
 #nextimg {
-    background: url(../images/images/right.png) right center no-repeat;
+    background: url(../images/images/imageNav.png) right center no-repeat;
     border-right: 5px solid #FFF;
     right: 70px;
+    transform: rotate(180deg);
 }
 
 #nextimg:hover {
@@ -129,16 +142,20 @@ body {
 }
 
 #prethumb {
-    background: url(../images/images/leftDown.png) left center no-repeat;
-    width: 29px;
-    height:81px;
+    background: url(../images/images/thumbNav.png) left center no-repeat;
+    width: 30px;
+    height:80px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+    margin-top: 2px;
 }
 
 #nextthumb {
-    background: url(../images/images/rightDown.png) right center no-repeat;
-    width: 29px;
-    height: 81px;
+    background: url(../images/images/thumbNav.png) right center no-repeat;
+    width: 30px;
+    height: 80px;
     margin-left: 10px;
+    margin-top: 2px;
 }
 
 #cutline {
